@@ -10,8 +10,8 @@ pikchr: main.o pikchr.o
 README.md: README.md.in pikchr
 	./pikchr -S 'title="Click Me!" style="font-size: smaller"' < README.md.in > README.md
 
-usage.svg: README.md.in pikchr
-	./pikchr -qb -N @usage -a 'style="font-size:initial;font-family:sans-serif;background-color:white"' < README.md.in > usage.svg
+%.svg: README.md.in pikchr
+	./pikchr -qb -N @$@ -a 'style="font-size:initial;font-family:sans-serif;background-color:white"' < README.md.in > $@
 
 clean:
 	rm -f pikchr *.o

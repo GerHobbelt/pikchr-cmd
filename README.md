@@ -46,7 +46,7 @@ which is included here for convenience (as permitted by its generous license).
 
 <summary title="Click Me!" style="font-size: smaller">Pikchr Source</summary>
 
-    ``` pikchr @usage requote delimiters x-current-color details open
+    ``` pikchr @usage.svg requote delimiters x-current-color details open
     arrow right 225% "Markdown+Pikchr" "Source"
     Tool: box rad 5px "pikchr" mono "Preprocessor" "(main.c)" mono fit
     arrow same "Markdown+SVG" "Intermediate"
@@ -74,9 +74,9 @@ Example 2: Intermediate file
     $ md2html < README.md > README.html
 
 Example 3: Compile the diagram in `README.md.in` that is tagged with modifier
-“`@usage`” to a separate SVG file called `usage.svg`
+“`@usage.svg`” to a separate SVG file called `usage.svg`
 
-    $ pikchr -q -b -N @usage < README.md.in > usage.svg
+    $ pikchr -q -b -N @usage.svg < README.md.in > usage.svg
 
 Delimiters
 ----------
